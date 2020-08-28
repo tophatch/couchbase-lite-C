@@ -6,7 +6,6 @@ CBL_InstanceCount
 CBL_DumpInstances
 
 CBL_Log
-CBL_SetLogLevel
 
 CBL_Now
 
@@ -49,6 +48,7 @@ CBLDatabase_DeleteIndex
 CBLDatabase_IndexNames
 
 CBLDocument_ID
+CBLDocument_RevisionID
 CBLDocument_Sequence
 CBLDocument_New
 CBLDocument_MutableCopy
@@ -96,6 +96,7 @@ CBLQuery_Explain
 CBLQuery_ColumnCount
 CBLQuery_ColumnName
 CBLQuery_AddChangeListener
+CBLQuery_CopyCurrentResults
 ; CBLQuery_CurrentResults
 
 CBLResultSet_Next
@@ -103,7 +104,6 @@ CBLResultSet_ValueAtIndex
 CBLResultSet_ValueForKey
 
 CBLEndpoint_NewWithURL
-CBLEndpoint_NewWithLocalDB
 CBLEndpoint_Free
 
 CBLAuth_NewBasic
@@ -132,12 +132,10 @@ kFLNullValue
 kFLEmptyArray
 kFLEmptyDict
 
-FLSlice_Equal
 FLSlice_Compare
 FLSlice_Copy
 FLSliceResult_New
 _FLBuf_Retain
-_FLBuf_Release
 
 FLDoc_FromResultData
 FLDoc_FromJSON
